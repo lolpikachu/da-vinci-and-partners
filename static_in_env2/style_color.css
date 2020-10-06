@@ -1,0 +1,72 @@
+/* Setting fade transition and default settings */
+body {
+  color: #000;
+  background-color: #f4f4f4;
+  transition: background-color 1s ease;
+}
+
+/* panel styles */
+.panel {
+  /* min height incase content is higher than window height */
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: sans-serif;
+  /* outline: 10px solid hotpink; */
+  /* turn above on to see the edge of panels */
+}
+
+/* colours */
+.color-violet {
+  background-color: #b984f5;
+  background-image: url(3.gif);
+  transition: background-image 4000ms linear;
+
+
+}
+.color-indigo {
+  background-color: #685ec2;
+  /* background-image: url(2.gif); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+}
+.color-blue {
+  background-color: #66a3e0;
+}
+.color-green {
+  background-color: #87d380;
+}
+.color-yellow {
+  background-color: #f5ec88;
+}
+.color-orange {
+  background-color: #eeb378;
+}
+.color-red {
+  background-color: #ee7a84;
+}
+
+/* styling for demo, can ignore */
+body {
+  text-align: center;
+  font-size: 120%;
+  line-height: 1.618;
+}
+h1, h2 {
+  font-size: 3em;
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+}
+p {
+  max-width: 30em;
+  margin-bottom: 1.618em;
+}
+a {
+  color: #4332CF;
+}
+
+.img-fluid {
+  width: 100%;
+  height: 100%;
+}
