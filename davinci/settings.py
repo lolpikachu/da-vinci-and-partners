@@ -12,9 +12,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '0$^akvpous^&5coyn4l4q)uc*=j#t^w0-nx^%67gx=1o26hmv^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['192.168.1.19', '127.0.0.1', '135.181.103.38', 'pikachuchan.ml', 'www.pikachuchan.ml']
+ALLOWED_HOSTS = ['192.168.1.19', '127.0.0.1', '135.181.103.38', 'colmar.gq', 'www.colmar.gq']
 
 
 # Application definition
