@@ -7,7 +7,6 @@
 
 body {
   transition: background-color 1s ease; /* Setting fade transition */
-  background-color: #f26822;
 }
 
 
@@ -39,10 +38,15 @@ h1 a {
   font: 100 1.2rem Raleway, sans-serif;
 }
 
-hr {
+hr_header {
   border-top: 2px solid black;
   border-bottom: black;
   margin-top: 6%;
+}
+
+hr {
+  border-top: 2px solid black;
+  border-bottom: black;
 }
 
 
@@ -95,7 +99,7 @@ hr {
   -webkit-box-align: start;
           align-items: flex-start;
   list-style-type: none;
-  margin-top: 3%;
+  /* margin-top: -15%; */
 }
 .nav_menu ul {
   display: -webkit-box;
@@ -113,87 +117,35 @@ hr {
 } */
 
 .nav_menu ul li a {
+  /* --fill-color: black; */
   color: black;
   position: relative;
   display: block;
-  font: 500 13em Raleway, sans-serif;
-  /* font: 500  13em Raleway, sans-serif; */
-  text-decoration: none;
-  text-transform: uppercase;
-  -webkit-transition: color 1s;
-  transition: color 1s;
-
- }
-
- .nav_menu ul li a:hover {
-  -webkit-animation: zigzag 1s linear infinite;
-  animation: zigzag 1s linear infinite;
-background: linear-gradient(135deg, rgba(238, 161, 99, 0.25) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(225deg, rgba(238, 161, 99, 0.25) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(315deg, rgba(238, 161, 99, 0.25) 0.25em, transparent 0.25em) 0 0, linear-gradient(45deg, rgba(238, 161, 99, 0.25) 0.25em, transparent 0.25em) 0 0;
-background-size: 0.75em 0.75em;
-color: #63b0ee;
- }
-
- @-webkit-keyframes zigzag {
-  100% {
-    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
-  }
-}
-
-@keyframes zigzag {
-  100% {
-    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
-  }
-}
-
- /* .nav_menu ul li a {
-  --fill-color: black;
   font: 500 7rem Raleway, sans-serif;
   text-decoration: none;
   text-transform: uppercase;
-  -webkit-text-stroke: 2px var(--fill-color);
+  /* -webkit-text-stroke: 2px var(--fill-color);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, var(--fill-color))) left/0 no-repeat;
   background: linear-gradient(var(--fill-color) 0 100%) left/0 no-repeat;
   color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-transition: 0.5s linear;
-  transition: 0.5s linear;
-}
-ul li a:hover {
+  transition: 0.5s linear; */
+ }
+#nav_menu ul li a:hover {
   background-size: 100%;
-} */
-
+}
 
 #black_background a{
-  background-color: black;
+  /* background-color: black;
   color: #f26822;
-  font-size: 7.5em;
+  font-size: 7rem; */
+  text-align: left;
 }
 
 #white a {
-  color: rgb(255, 255, 255);
-  font-size: 9em;
-}
-
-/* li a  span{
-  background-color: white !important;
-  font-size: 0.8em !important;
-} */
-
-.font_size a {
-  font-size: 10.7em !important;
-}
-
-.font_size_1 a {
-  font-size: 9em !important;
-}
-
-.font_size_2 a {
-  font-size: 7em !important;
-}
-
-.nav_menu ul li:hover {
-  fill: url('http://i.giphy.com/VQ2XbYu2ITUbK.gif');
+  color: white;
 }
 
 /* .nav_menu ul li a:hover {
@@ -209,7 +161,9 @@ transition: 0.5s linear;
 background-size: 100%;
 } */
 
+/* #nav_menu ul li a:hover {
 
+} */
 
 /* End Main navigation MENU----------------------------------------------------------------------------------------------------------- */
 

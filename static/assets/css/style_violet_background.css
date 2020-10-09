@@ -7,7 +7,6 @@
 
 body {
   transition: background-color 1s ease; /* Setting fade transition */
-  background-color: #f26822;
 }
 
 
@@ -62,10 +61,10 @@ hr {
 
 /* colours */
 .color-violet {
-  background-color:  #f26822;
+  background-color: #4332CF;
 }
 .color-indigo {
-  background-color: #4332CF;
+  background-color: #FAEB33;
 }
 .color-blue {
   background-color: #2F8FED;
@@ -116,34 +115,12 @@ hr {
   color: black;
   position: relative;
   display: block;
-  font: 500 13em Raleway, sans-serif;
+  font: 500 13.292em Raleway, sans-serif;
   /* font: 500  13em Raleway, sans-serif; */
   text-decoration: none;
   text-transform: uppercase;
-  -webkit-transition: color 1s;
-  transition: color 1s;
 
  }
-
- .nav_menu ul li a:hover {
-  -webkit-animation: zigzag 1s linear infinite;
-  animation: zigzag 1s linear infinite;
-background: linear-gradient(135deg, rgba(238, 161, 99, 0.25) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(225deg, rgba(238, 161, 99, 0.25) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(315deg, rgba(238, 161, 99, 0.25) 0.25em, transparent 0.25em) 0 0, linear-gradient(45deg, rgba(238, 161, 99, 0.25) 0.25em, transparent 0.25em) 0 0;
-background-size: 0.75em 0.75em;
-color: #63b0ee;
- }
-
- @-webkit-keyframes zigzag {
-  100% {
-    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
-  }
-}
-
-@keyframes zigzag {
-  100% {
-    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
-  }
-}
 
  /* .nav_menu ul li a {
   --fill-color: black;
@@ -172,7 +149,6 @@ ul li a:hover {
 
 #white a {
   color: rgb(255, 255, 255);
-  font-size: 9em;
 }
 
 /* li a  span{
@@ -185,7 +161,7 @@ ul li a:hover {
 }
 
 .font_size_1 a {
-  font-size: 9em !important;
+  font-size: 10.5em !important;
 }
 
 .font_size_2 a {
