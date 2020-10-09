@@ -1,0 +1,314 @@
+/* @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700"); */
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    transition: background-color 1s ease; /* Setting fade transition */
+  }
+  
+  
+  /* HEADER --------------------------------------------------------------------------------------------------*/
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+  }
+  
+  header, nav, hr {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  
+  .ham {
+    margin-top: 1%;
+    margin-right: -0.6%;
+  }
+  /* end HEADER --------------------------------------------------------------------------------------------------*/
+  
+  
+  h1 a {
+    text-decoration: none;
+    color:black;
+    font-weight: 100;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font: 100 1.2rem Raleway, sans-serif;
+  }
+  
+  hr {
+    border-top: 2px solid black;
+    border-bottom: black;
+    margin-top: 6%;
+  }
+  
+  
+  /* Background color change --------------------------------------------------------------------------------------------------*/
+  .panel {
+    /* min height incase content is higher than window height */
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    /* /* font-family: sans-serif; */
+  
+    /* 2 comments below were initially here */
+    /* outline: 10px solid hotpink; */
+    /* turn above on to see the edge of panels */
+  }
+  
+  /* colours */
+  .color-violet {
+    background-color:  #f26822;
+  }
+  .color-indigo {
+    background-color: #4332CF;
+  }
+  .color-blue {
+    background-color: #2F8FED;
+  }
+  .color-green {
+    background-color: #4DCF42;
+  }
+  .color-yellow {
+    background-color: #FAEB33;
+  }
+  .color-orange {
+    background-color: #F19031;
+  }
+  .color-red {
+    background-color: #F2293A;
+  }
+  /* End Background color change--------------------------------------------------------------------------------------------*/
+  
+  
+  /* Main navigation MENU-------------------------------------------------------------------------------------------------- */
+  .nav_menu {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: start;
+            align-items: flex-start;
+    list-style-type: none;
+    margin-top: 4%;
+  }
+  .nav_menu ul {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: start;
+            align-items: flex-start;
+    list-style-type: none;
+  }
+  
+  li + li { 
+    margin-top: -2.5%; 
+  }
+  
+  .nav_menu ul li a {
+    /* --fill-color: black; */
+    color: black;
+    position: relative;
+    display: block;
+    font: 500 12rem Raleway, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* -webkit-text-stroke: 2px var(--fill-color);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, var(--fill-color))) left/0 no-repeat;
+    background: linear-gradient(var(--fill-color) 0 100%) left/0 no-repeat;
+    color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-transition: 0.5s linear;
+    transition: 0.5s linear; */
+   }
+  #nav_menu ul li a:hover {
+    background-size: 100%;
+  }
+  
+  /* #black_background a{
+    background-color: black;
+    color: #f26822;
+    font-size: 7rem;
+  }
+  
+  #white a {
+    color: white;
+  } */
+  
+  /* .nav_menu ul li a:hover {
+  --fill-color: rgb(233, 15, 15);
+  -webkit-text-stroke: 2px var(--fill-color);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, var(--fill-color))) left/0 no-repeat;
+  background: linear-gradient(var(--fill-color) 0 100%) left/0 no-repeat;
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+  background-size: 100%;
+  } */
+  
+  /* #nav_menu ul li a:hover {
+  
+  } */
+  
+  /* End Main navigation MENU----------------------------------------------------------------------------------------------------------- */
+  
+  
+  /* #fill_blue {
+    --fill-color: #05ade0;
+  }
+  
+  #fill_black {
+    --fill-color: #ffffff;
+  } */
+  
+  
+  MEDIA *--------------------------------------------------------------------------------------------------/
+  @media screen and (max-width: 375px) and (min-width: 320px) {
+    #nav_menu ul li a {
+      font: 700 2.5rem Raleway, sans-serif;
+    }
+  
+    #nav_menu {
+      width: 100%;
+      display: none;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
+      -webkit-box-align: center;
+              align-items: center;
+      list-style-type: none;
+      margin-right: 3%;
+      margin-top: 8%;
+    }
+  
+    #nav_menu ul {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
+      -webkit-box-align: center;
+              align-items: center;
+      list-style-type: none;
+    }
+  
+    #nav_menu ul li {
+      text-align: center;    
+    }
+  
+    #nav_menu ul li a:active {
+      background-size: 100%;
+    }
+  
+    #nav_menu ul li a:hover {
+      background-size: 100%;
+    }
+  
+    hr {
+      border-top: 1px solid black;
+      margin-right: 2%;
+      border-bottom: black;
+    }
+  }
+  /* END MEDIA--------------------------------------------------------------------------------------------------
+  
+  
+  
+  /* color background change styling for demo, can ignore */
+  /* body {
+    text-align: center;
+    font-size: 120%;
+    line-height: 1.618;
+  }
+  h1, h2 {
+    font-size: 3em;
+    letter-spacing: -0.05em;
+    line-height: 1.1;
+  }
+  p {
+    max-width: 30em;
+    margin-bottom: 1.618em;
+  }
+  a {
+    color: #4332CF;
+  } */
+  
+  
+  
+  /* text filled with gif-------------------------------------------------------------------------------------------------- */
+  h2{
+    font-family: helvetica, arial, sans-serif;
+    width: 100%; 
+    font-size: 16vw;
+    color: white;
+  
+    top: 50%;
+    left: 0;
+    right: 0;
+    -webkit-transform: translate3d(0,-50%,0);
+            transform: translate3d(0,-50%,0);
+    margin: 0;
+    background: url('http://i.giphy.com/VQ2XbYu2ITUbK.gif');
+    background-size: cover;
+    background-repeat: norepeat;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+  /* end text filled with gif --------------------------------------------------------------------------------------------------*/
+  
+  
+  
+  /* menu with numbers --------------------------------------------------------------------------------------------------*/
+  #inline_nav {
+    display: -webkit-box;
+    margin-top: 10%; 
+     
+  }
+  
+  #inline_nav a {
+   text-decoration: none;
+   font: 6rem sans-serif;
+   color: black;
+   margin-right: 1.1%;
+  line-height: 1;
+  /* --fill-color: black;
+  -webkit-text-stroke: 2px var(--fill-color);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, var(--fill-color))) left/0 no-repeat;
+  background: linear-gradient(var(--fill-color) 0 100%) left/0 no-repeat;
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear; */
+  }
+  
+  #inline_nav a:hover {
+    background-size: 100%;
+  } 
+  
+  @media screen and (max-width: 375px) and (min-width: 320px) {
+  
+    #inline_nav {
+      display: -webkit-box;
+    }
+    
+    #inline_nav a {
+     text-decoration: none;
+     font: 100 4rem Raleway, sans-serif;
+     color: black;
+     margin-right: 1.1%;
+    line-height: 1;
+    
+    }
+  }
+  /* end menu with numbers --------------------------------------------------------------------------------------------------*/
