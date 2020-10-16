@@ -1,31 +1,8 @@
+{% extends 'base.html' %}
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="ru" >
-<head>
-  <meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+{% block content %}
 
-  <title>da vinci</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/face-with-rolling-eyes_1f644.png">
-
-  <!-- Google Fonts -->
-
-
-  <!-- Vendor CSS Links -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
-  <!-- Template Main CSS File -->
-  <link href="{% static 'assets/css/style_hr.css' %}"  rel="stylesheet">
-
-
-</head>
-
-<body>
 <!-- 
 ░░░░░░░░░░░░░░░░░░░░░▄▀░░▌
 ░░░░░░░░░░░░░░░░░░░▄▀▐░░░▌
@@ -43,33 +20,97 @@
 ▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▄▒▒▒▒▄▀▒▒▒▌░░▀▄
 ▒▒▒▒▒▒▒▒▀▄▒▒▒▒▒▒▒▒▀▀▀▀▒▒▒▄▀ -->
 <!-- ======= Header ======= -->
-  <header>
-    <div class="header">
+  <header class="top animated fadeInDown">
+    <div >
       <h1><a href="/">жёлтые котики®</a></h1>
     </div>
+
+    <div class="egg">
+        <div class="eggdiv">
+        <p>вкл темную тему</p>
+    <div id="animationWindow">
+    </div>
+  </div>
     <div class="ham"><img src="{% static 'assets/img/ham.png' %}"></div> 
+  </div>
   </header> <!-- End Header -->  
-  <hr class="hr_header">
+
+  <hr class="hr_header animated fadeInLeft">
 <!-- ======= Main nav ======= -->
+<div class="contact">
+  <a href="/">
+  <p  class=" animated fadeInUp">контакт</p>
+  <!-- <p  class=" animated fadeInUp">контакт</p>
+  <p  class=" animated fadeInUp">контакт</p>
+  <p class=" animatedfadeInUp">контакт</p> -->
+</a>
+</div>
+
 <nav>
 <div class="panel" data-color="violet">
   <div class="nav_menu" >
     <ul>
-      <li  ><a href="https://stackoverflow.com/questions/22559756/changing-hover-to-touch-click-for-mobile-devices">Заказать сайт</a>  <hr></li>
-      <li  id="black_background"><a  href="#">Заказать красивый сайт</a> <hr></li>
-      <li  ><a href="#">Сделать чат-бота</a><hr></li>
-      <li  id="black_background"><a href="#">срочно нужно в топ гугла</a><hr></li>
-      <li ><a href="#">Хочу приложение</a><hr></li>
-      <li  id="white"><a href="#">Я просто гуляю</a><hr></li>
-      <li  ><a href="#">Разработка ПО</a></li>
+      <li  class="bottom animated fadeInUp hint"><a href="https://stackoverflow.com/questions/22559756/changing-hover-to-touch-click-for-mobile-devices">Заказать сайт</a>  <hr></li>
+      <li class="bottom animated fadeInUp hint" id="black_background"><a  href="#">Заказать красивый сайт</a> <hr></li>
+      <li  class="bottom animated fadeInUp hint"><a href="#">Сделать чат-бота</a><hr></li>
+      <li  class="bottom animated fadeInUp hint" id="black_background"><a href="#">срочно нужно в топ гугла</a><hr></li>
+      <li class="bottom animated fadeInUp hint" id="white"><a href="#">Хочу приложение</a><hr></li>
+      <li class="bottom animated fadeInUp hint" ><a href="#">Я просто гуляю</a><hr></li>
+      <!-- <li  class="bottom animated fadeInUp hint"><a href="#">Разработка програм</a></li> -->
+      <li  class="bottom animated fadeInUp hint"><a href="#"><div class="brasil" data-text="Разработка програм">Разработка програм</div></a></li>
     </ul>
   </div>
 </div>
 </nav><!-- .main-nav-->
+<canvas></canvas>
+<script>
+  // http://www.cssplant.com/clip-path-generator
+  p = [
+	[389,246,0],
+  [410,255,20],
+  [413,268,7],
+  [431,261,12],
+  [418,244,30],
+  [416,217,25],
+  [420,205,8],
+  [427,227,-20],
+  [432,236,5],
+  [444,228,12],
+  [451,232,41],
+  [446,246,72],
+  [443,264,96],
+  [446,278,65],
+  [463,267,20],
+  [460,258,-10],
+  [464,243,-20],
+  [459,233,0],
+  [475,225,22],
+  [484,225,29],
+  [490,214,51],
+  [476,202,55],
+  [462,202,55],
+  [446,205,42],
+  [440,192,42],
+  [430,183,72],
+  [413,184,58],
+  [406,191,32],
+  [406,207,0],
+  [402,220,0],
+  [390,222,20],
+  [385,228,10],
+  [389,246,0]
+];
+</script>
 
 <div class="panel" data-color="indigo">
-  <h2>Indigo panel</h2>
+  <h2>Дальше неинтересно.</h2>
 </div>
+
+<!-- Star Wars Section-->
+
+<!-- End Star Wars Section-->
+
+
 <div class="panel" data-color="blue">
   <h2>Blue panel</h2>
 </div>
@@ -88,13 +129,7 @@
 
 
 
-<!-- Vendor JS Files -->
-<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
 
-<!-- Template Main JS File -->
-<script  src="{% static 'assets/js/script.js' %}"></script> 
-
-</body>
-</html>
+{% endblock content %}
 
 
