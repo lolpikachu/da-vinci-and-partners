@@ -1,4 +1,7 @@
 /* @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700"); */
+/* @import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700); */
+
+
 
 * {
   margin: 0;
@@ -7,28 +10,22 @@
 
 body {
   transition: background-color 1s ease; /* Setting fade transition */
-  background-color: #f26822;
+  height: 100%;
+  width: 100%;
 }
 
 
 /* HEADER --------------------------------------------------------------------------------------------------*/
 header {
   display: flex;
-  justify-content: space-between;
-  margin-top: 2%;
+  /* justify-content: space-between; */
+  margin-top: 1%;
 }
 
 header, nav, hr {
-  margin-left: 6%;
-  margin-right: 6%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
-
-.ham {
-  margin-top: 1%;
-  margin-right: -0.6%;
-}
-/* end HEADER --------------------------------------------------------------------------------------------------*/
-
 
 h1 a {
   text-decoration: none;
@@ -39,13 +36,70 @@ h1 a {
   font: 100 1.2rem Raleway, sans-serif;
 }
 
+.egg {
+  /* width: 10%; */
+  display: flex;
+  /* justify-content: space-around; */
+  margin-left: auto;
+}
+
+.eggdiv {
+  float: right;
+  display: flex;
+  justify-content: right;
+  margin-left: auto;
+  margin-right: 15%;
+}
+.egg p {
+  margin-top: 4%;
+  margin-left: auto;
+  margin-right: -7%;
+}
+#animationWindow {
+
+  /* margin-right: -40%; */
+  margin-top: 1%;
+  width: 28%;
+  height: 28%;
+  -webkit-tap-highlight-color:transparent;
+   cursor:pointer;
+ }
+
+.ham {
+  margin-top: 1%;
+  /* width: 70%;
+  height: 70%; */
+  /* margin-right: -0.6%; */
+}
+/* end HEADER --------------------------------------------------------------------------------------------------*/
+
+
+.hr_header {
+  border-top: 2px solid black;
+  border-bottom: black;
+  margin-top: 5%;
+}
+
 hr {
   border-top: 2px solid black;
   border-bottom: black;
-  margin-top: 6%;
 }
 
+.contact {
+  /* position: absolute; */
+  float: right;
+  margin-right: 6%;
 
+}
+
+.contact p { 
+  font-weight: 700;
+}
+
+.contact a {
+  text-decoration: none;
+  color: black;
+}
 /* Background color change --------------------------------------------------------------------------------------------------*/
 .panel {
   /* min height incase content is higher than window height */
@@ -62,10 +116,10 @@ hr {
 
 /* colours */
 .color-violet {
-  background-color:  #f26822;
+  background-color: #ffc400;
 }
 .color-indigo {
-  background-color: #4332CF;
+  background-color: #fa8c1f;
 }
 .color-blue {
   background-color: #2F8FED;
@@ -87,24 +141,25 @@ hr {
 
 /* Main navigation MENU-------------------------------------------------------------------------------------------------- */
 .nav_menu {
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
   -webkit-box-align: start;
           align-items: flex-start;
-  list-style-type: none;
-  margin-top: 3%;
+  list-style-type: none; */
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 .nav_menu ul {
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
   -webkit-box-align: start;
-          align-items: flex-start;
+          align-items: flex-start; */
   list-style-type: none;
 }
 
@@ -113,87 +168,33 @@ hr {
 } */
 
 .nav_menu ul li a {
+  /* --fill-color: black; */
   color: black;
-  position: relative;
-  display: block;
-  font: 500 13em Raleway, sans-serif;
-  /* font: 500  13em Raleway, sans-serif; */
-  text-decoration: none;
-  text-transform: uppercase;
-  -webkit-transition: color 1s;
-  transition: color 1s;
-
- }
-
- .nav_menu ul li a:hover {
-  -webkit-animation: zigzag 1s linear infinite;
-  animation: zigzag 1s linear infinite;
-background: linear-gradient(135deg, rgba(238, 161, 99, 0.25) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(225deg, rgba(238, 161, 99, 0.25) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(315deg, rgba(238, 161, 99, 0.25) 0.25em, transparent 0.25em) 0 0, linear-gradient(45deg, rgba(238, 161, 99, 0.25) 0.25em, transparent 0.25em) 0 0;
-background-size: 0.75em 0.75em;
-color: #63b0ee;
- }
-
- @-webkit-keyframes zigzag {
-  100% {
-    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
-  }
-}
-
-@keyframes zigzag {
-  100% {
-    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
-  }
-}
-
- /* .nav_menu ul li a {
-  --fill-color: black;
+  /* position: relative; */
+  /* display: block; */
   font: 500 7rem Raleway, sans-serif;
   text-decoration: none;
   text-transform: uppercase;
-  -webkit-text-stroke: 2px var(--fill-color);
+  /* -webkit-text-stroke: 2px var(--fill-color);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, var(--fill-color))) left/0 no-repeat;
   background: linear-gradient(var(--fill-color) 0 100%) left/0 no-repeat;
   color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-transition: 0.5s linear;
-  transition: 0.5s linear;
-}
-ul li a:hover {
-  background-size: 100%;
-} */
+  transition: 0.5s linear; */
+ }
 
 
 #black_background a{
-  background-color: black;
+  /* background-color: black;
   color: #f26822;
-  font-size: 7.5em;
+  font-size: 7rem; */
+  text-align: left;
 }
 
 #white a {
   color: rgb(255, 255, 255);
-  font-size: 9em;
-}
-
-/* li a  span{
-  background-color: white !important;
-  font-size: 0.8em !important;
-} */
-
-.font_size a {
-  font-size: 10.7em !important;
-}
-
-.font_size_1 a {
-  font-size: 9em !important;
-}
-
-.font_size_2 a {
-  font-size: 7em !important;
-}
-
-.nav_menu ul li:hover {
-  fill: url('http://i.giphy.com/VQ2XbYu2ITUbK.gif');
 }
 
 /* .nav_menu ul li a:hover {
@@ -209,7 +210,9 @@ transition: 0.5s linear;
 background-size: 100%;
 } */
 
+/* #nav_menu ul li a:hover {
 
+} */
 
 /* End Main navigation MENU----------------------------------------------------------------------------------------------------------- */
 
@@ -301,16 +304,16 @@ a {
 h2{
   font-family: helvetica, arial, sans-serif;
   width: 100%; 
-  font-size: 16vw;
+  font-size: 7vw;
   color: white;
-
+  text-align: center;
   top: 50%;
   left: 0;
   right: 0;
   -webkit-transform: translate3d(0,-50%,0);
           transform: translate3d(0,-50%,0);
   margin: 0;
-  background: url('http://i.giphy.com/VQ2XbYu2ITUbK.gif');
+  background: url('https://media.giphy.com/media/gFhZjOtzoutSvckWPM/giphy.gif');
   background-size: cover;
   background-repeat: norepeat;
 	-webkit-background-clip: text;
@@ -368,3 +371,102 @@ transition: 0.5s linear; */
   }
 }
 /* end menu with numbers --------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+.brasil {
+  font-family: arial;
+  position: relative;
+   color: #fff;
+  /* text-align: center; */
+  font-size: 7rem;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+}
+.brasil::before,
+.brasil::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.brasil::before {
+  left: 2px;
+    clip: rect(79px, 1200px, 86px, 0);
+  text-shadow: -1px 0 black;
+  background:#ffc400;
+  animation: brasil-anim-2 1s infinite linear alternate-reverse;
+}
+
+.brasil::after {
+  /* variation */
+  left: -2px;
+  clip: rect(79px, 1200px, 86px, 0);
+  text-shadow: -1px 0 black;
+  background: #ffc400;
+  animation: brasil-anim-1 1s infinite linear alternate-reverse;
+   animation-delay: -1s;
+}
+
+@keyframes brasil-anim-1 {
+  0% {
+    clip: rect(20px, 1200px, 76px, 0);
+  }
+  20% {
+    clip: rect(19px, 1200px, 16px, 0);
+  }
+  40% {
+    clip: rect(16px, 1200px, 3px, 0);
+  }
+  60% {
+    clip: rect(62px, 1200px, 78px, 0);
+  }
+  80% {
+    clip: rect(25px, 1200px, 13px, 0);
+  }
+  100% {
+    clip: rect(53px, 1200px, 86px, 0);
+  }
+}
+
+@keyframes brasil-anim-2 {
+  0% {
+    clip: rect(79px, 1200px, 86px, 0);
+  }
+  
+  20% {
+    clip: rect(20px, 1200px, 30px, 0)
+  }
+  
+  40% {
+    clip: rect(25px, 1200px, 5px, 0)
+  }
+  
+  60% {
+    clip: rect(65px, 1200px, 85px, 0)
+  }
+  
+  80% {
+    clip: rect(120px, 1200px, 145px, 0)
+  }
+  
+  100% {
+    clip: rect(95px, 1200px, 75px, 0)
+  }
+}
+
+
+
+canvas{
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+}
