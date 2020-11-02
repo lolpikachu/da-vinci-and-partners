@@ -10,4 +10,13 @@ def index(request):
 def about(request):
     return render(request, 'star.html', {})
 
+def tunnel(request):
+    return render(request, 'tunnel.html', {})
+
+def night(request):
+    return render(request, 'night_mode.html', {})
+
+def en(request):
+    return render(request, 'index_en.html', {})
+
 

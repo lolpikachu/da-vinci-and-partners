@@ -1,192 +1,15 @@
-{% extends 'base.html' %}
 {% load static %}
 
-{% block content %}
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Star Wars opening crawl from 1977</title>
+  <link href="{% static 'assets/css/night.css' %}"  rel="stylesheet">
 
-<!-- ======= Pre-Header ======= -->
-<div class="pre-header-div">
-  <img class="pre-header-image-1" src="{% static 'assets/img/lisa.jpg' %}">
-</div> 
-
-<!-- 🐔🐔🐔🐔🐔🐔Desktop Version🐔🐔🐔🐔🐔🐔 -->
-<!-- ======= Header ======= -->
-<header class="top animated fadeInDown ">
-<!-- ======= Logo ======= -->
-  <div class="logo" >
-    <h1><a href="/">duke®</a></h1>
-  </div>
-  <div class="half-header">
-<!-- ======= Burger ======= -->
-<div class="side-menu">
-  <input type="checkbox" id="hamburger" name="aesthetic button" class="ham-input">
-   <label for="hamburger" >
-    <div class="container" onclick="myFunction(this)">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-    </div>
-  </label> 
-</div> 
-<!-- ======= Egg ======= -->
-<div class="toggle">
-  <input type="checkbox" id="egg" name="change theme" class="egg-input">
-  <label for="egg" class="egg-label"></label>  
-  <p class="switch_off">темная тема</p>
-  <p class="switch_on">выкл темную тему</p>
-</div>
-</div> 
-</header> 
-
-
-<!-- End Header -->  
-
-<div class="panel" data-color="violet">
-  <div class="contact">
-    <a href="/">
-    <p  class=" animated fadeInUp italic">контакт</p>
-  </a>
-  </div>
-<hr class="hr_header animated fadeInLeft">
-<!-- ======= Main nav ======= -->
-<div class="language">
-  <a href="en">
-  <p  class=" animated fadeInUp italic">язык</p>
-</a>
-</div>
-<p  class=" animated fadeInUp choice">нужно выбрать &#8595;</p>
-<nav>
-
-  <div class="nav_menu" >
-    <!-- 🙄🙄🙄🙄🙄🙄🙄🙄🙄🙄🙄🙄 -->
-    <ul>
-      <!-- <hr> -->
-      <li  class="bottom animated fadeInUp"><a href="">нужен сайт</a>  <hr></li>
-      <li class="bottom animated fadeInUp "><a  href="#"><div class="brasil" data-text="нужен красивый сайт">нужен красивый сайт</div></a> <hr></li>
-      <!-- <li class="bottom animated fadeInUp"><a  href="en">  <div class="loop-holder"><div class="loop-holder__text">нужен красивый сайт</div></div></a> <hr></li> -->
-      <li  class="bottom animated fadeInUp"><a href="#">Сделать чат-бота</a><hr></li>
-      <li  class="bottom animated fadeInUp" id="white"><a href="#">срочно в топ гугла</a><hr></li>
-      <li class="bottom animated fadeInUp" ><a href="#">Хочу приложение</a><hr></li>
-      <li class="bottom animated fadeInUp" ><a href="tunnel">Я просто гуляю</a><hr></li>
-      <!-- <li  class="bottom animated fadeInUp "><a href="#">Разработка програм</a></li> -->
-      <li  class="bottom animated fadeInUp" id="white"><a href="#"><div class="brasil" data-text="Разработка програм">Разработка програм</div></a></li>
-    </ul>
-  </div>
-
-</nav><!-- .main-nav-->
-</div>
-
-<div class="panel" data-color="orange">
-  <h2>Мы используем самые сексуальные технологии на рынке</h2>
-</div>
-
-<div class="panel" data-color="indigo">
-  <!-- <h2>Разрабатываем </h2> -->
-  <!-- <h2>с максимально</h2>
-  <h2>возможной скоростью</h2>
-  <h2>высокохудожественные</h2>
-  <h2>технологии</h2> -->
-</div>
-
-<!-- Star Wars Section-->
-
-<!-- End Star Wars Section-->
-                    <!-- #####
-                  #########
-                 ###########
-                #############
-               ###############
-               ###############
-               ###############
-               ###############
-                #############
-                 ###########
-     #####        ###########\
-   ########        ############\
-  ##########     ########     ##\
- ############   #########      # \
-############## #########          |
-########################      \   \
-########################      o  o\\
-########################     oo\ oo |    /###\
- ########################     oo  o |   /#`####
- ########################    \oo \o\ \__##`####
-  ########## #####    ###     oo  oo /  #######
-   ########  ###        ##  /~\o  \//   ######/
-    #####    ##          #      \ /     \####/
-             ##                            |
-             ##    /\~~\                   |
-              #    | \                     |
-              #    |  \                   |
-               |       \                 |
-              ####      #               |
-             ######     ###           |~
-             #######   xxx##       / ~
-             #########  xxxxx####/~
-              ########  xxxxxx##\
-              ######\##  xxxxx#  \
-               ######\##       ###\
-               #######\###    #####\
-                #######|#######(((((((
-                #######\####))))))))))))
-                 #######\##))))))))))88)))
-                  #######))))))8888))8888)))
-                  ######)))))))88888))888))))
-                   #####))))))))8888)))88)))))
-                   ####..))))))))88)))))))))))
-                    ##...)))))))))))))))))))))
-                    ##...)))))))))))))))))))))
-                    #...))))))))))))))))))))))
-                    #...))))))))))))))))))))))
-                    ).)))))))))))))))))))))))
-                     )--/)))))))))))))))))))
-                      ))))))))))))))))))))#
-                      ))))))))))))  ))))###
-                        )))))))))     ####
-                         #####  #    #####
-                        #####   #    #####
-                        #####   #    #####
-                       ######   #    #####
-                       #####   #     ####
-                      ######   #    #####
-                      #####    #    #####
-        /9999\    /99######   #   99####99
-       99999999999|99#####9   #  999###99999
-      9999999\99999\999##999 #   99999999999-999
-     999999999-99999\-99999##  999999999999/999999
-    99999999999\--9999999999   9999999999/-999999999
-    99999999999999\999999999  9999999999/999999999999
-    99999999999999999999999     999999999999999999999
-      9999999999999999999         999999999999999999
-        999999999999999             99999999999999 -->
-
-<div class="panel" data-color="blue">
-  <h2></h2>
-</div>
-<div class="panel" data-color="green">
-  <!-- <h2 class="gif1">Мы владеем тайными современными артефактами, которые позволяют писать код в миллион миллиардов раз гениальнее</h2> -->
-</div>
-<div class="panel" data-color="yellow">
-  <h2>верхние пределы возможного</h2>
-</div>
-<div class="panel" data-color="orange">
-  <h2>Мы используем самые сексуальные технологии на рынке</h2>
-</div>
-<div class="panel" data-color="red">
-  <h2>Red panel</h2>
-</div>
-<div class="panel" data-color="green">
-  <!-- <h2 class="gif1">Мы владеем тайными современными артефактами, которые позволяют писать код в миллион миллиардов раз гениальнее</h2> -->
-</div>
-<div class="panel" data-color="yellow">
-  <h2>верхние пределы возможного</h2>
-</div>
-<div class="panel" data-color="orange">
-  <h2>Мы используем самые сексуальные технологии на рынке</h2>
-</div>
-<div class="panel" data-color="red">
-  <h2>Red panel</h2>
-</div>
+</head>
+<body>
 <!-- partial:index.partial.html -->
-<div class="st">
 <article class="starwars">
   <audio preload="auto">
     <source src="https://s.cdpn.io/1202/Star_Wars_original_opening_crawl_1977.ogg" type="audio/ogg" />
@@ -238,20 +61,6 @@
       </p>
       </div>
   </section>
-             <!-- _         FUCK YOU        _
-                       |_|                       |_|
-                       | |         /^^^\         | |
-                      _| |_      (| "o" |)      _| |_
-                    _| | | | _    (_---_)    _ | | | |_
-                   | | | | |' |    _| |_    | `| | | | |
-                   |          |   /     \   |          |
-                    \        /  / /(. .)\ \  \        /
-                      \    /  / /  | . |  \ \  \    /
-                        \  \/ /    ||Y||    \ \/  /
-                         \__/      || ||      \__/
-                                   () ()
-                                   || ||
-                                  ooO Ooo          unknown -->
   
   <section class="logo">
 <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -344,10 +153,14 @@
 </svg>
   
   </section>
-</div>
+  </div>
 </article>
-</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+  <script  src="{% static 'assets/js/canvas.js' %}"></script> 
 
-{% endblock content %}
+</body>
+</html>
+
 
 
