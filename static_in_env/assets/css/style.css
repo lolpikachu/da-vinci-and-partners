@@ -106,6 +106,8 @@ h1 a {
   position: relative;
   width: 6rem;
   height: 3rem;
+  /* width: 9rem;
+  height: 4.5rem; */
   background-color: #000000;
   border-radius: 999px;
 }
@@ -117,6 +119,8 @@ h1 a {
 .egg-label {
   width: 2.5rem;
   height: 2.5rem;
+  /* width: 4rem;
+  height: 4rem; */
   border-radius: 50%;
   background-color: #ebe6e2;
   position: absolute;
@@ -184,9 +188,9 @@ h1 a {
   color: #000000;
   display: block;
   float: left;
-  margin-left: -151%;
-  margin-top: 10%;
-  font-size: 1.3rem;
+  margin-left: -146%;
+  margin-top: 11%;
+  font-size: 1.5rem;
 }
 
 .egg-input:checked~.switch_off {
@@ -208,7 +212,7 @@ h1 a {
 
 .side-menu {
   transition: .5s;
-  margin-top: 4.5%;
+  margin-top: 1.5vh;
 }
 
 .ham-input {
@@ -253,7 +257,7 @@ h1 a {
 .hr_header {
   border-top: 0.12rem solid black;
   border-bottom: black;
-  margin-top: 9%;
+  margin-top: 3vh;
   /* margin-left: 2%;
   margin-right: 2%; */
 }
@@ -267,8 +271,9 @@ h1 a {
 }
 
 .contact {
-  margin-bottom: -9.3%;
+  margin-bottom: -3.7vh;
   margin-left: 14%;
+  margin-top: 5vh;
 }
 
 hr {
@@ -277,15 +282,15 @@ hr {
 }
 
 .language {
-  float: right;P
+  float: right;
   margin-right: 20%;
-  margin-top: -0.7%;
+  margin-top: -1.2vh;
 }
 
 
 p {
   margin-top: 0;
-  font-size: 1.5rem !important;
+  font-size: 1.5rem;
 }
 
 
@@ -293,20 +298,22 @@ a {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
-
+.switch_off
 .choice {
   margin-top: 11%;
-  color: white;
+  color: white !important;
   margin-bottom: -2%;
   margin-left: 0.6%;
 }
+
+
 
 /* END general --------------------------------------------------------------------------------------------------*/
 
 /* Main navigation MENU-------------------------------------------------------------------------------------------------- */
 .nav_menu {
-  /* margin-top: 11%; */
-  margin-bottom: 30%;
+  margin-top: 6%;
+  /* margin-bottom: 30%; */
 }
 
 .nav_menu ul {
@@ -325,37 +332,55 @@ a {
   color: rgb(255, 255, 255) !important;
 }
 
-.loop-holder {
-  display: flex;
-  white-space: nowrap;
-  overflow: hidden;
+.gif a:hover {
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+  margin: 0;
+  background: url('https://media.giphy.com/media/5b0kIlPA4VAevU0YwX/giphy.gif');
+  background-size: cover;
+  background-repeat: norepeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.loop-holder__text {
-  animation: textLoop 10s linear infinite;
-  font-size: 8.3vw;
-  color: #ffffff;
-  background-color: #000000;
-  /* font-style: oblique; */
-  /* font-weight: 600; */
-  /* padding-right: .35em; */
+.gif1 a:hover {
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+  margin: 0;
+  /* background: url('https://media.giphy.com/media/1ZyopOUY0ZKE/giphy.gif'); */
+  /* background: url('https://media.giphy.com/media/KcJy1exTHEwFiBgV2v/giphy.gif'); */
+  background: url('https://media.giphy.com/media/xT8qBaLdSJl5YjnRqE/giphy.gif');
+  background-size: cover;
+  background-repeat: norepeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-@keyframes textLoop {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
 
-  100% {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
+.gif2 a:hover {
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+  margin: 0;
+  /* background: url('https://media.giphy.com/media/VbQYnizk1UCPZzedxT/giphy.gif'); */
+  background: url('https://media.giphy.com/media/2x0UIfEdYKYJFhbvSf/giphy.gif');
+  background-size: cover;
+  background-repeat: norepeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.loop-holder__text:hover {
-  animation-play-state: paused;
-}
+/* .nav_menu ul li a:active {
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+  margin: 0;
+  background: url('https://media.giphy.com/media/2x0UIfEdYKYJFhbvSf/giphy.gif');
+  background-size: cover;
+  background-repeat: norepeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+
 
 .brasil {
   /* font-family: arial; */
@@ -449,6 +474,10 @@ a {
   }
 }
 
+.canvas {
+  height: 20%;
+}
+
 /* END Main navigation MENU-------------------------------------------------------------------------------------------------- */
 
 /* Background color change --------------------------------------------------------------------------------------------------*/
@@ -505,7 +534,7 @@ h2 {
   -webkit-transform: translate3d(0, -50%, 0);
   transform: translate3d(0, -50%, 0);
   margin: 0;
-  background: url('https://media.giphy.com/media/l41m5PRYJiXB3mDbq/giphy.gif');
+  /* background: url('https://media.giphy.com/media/l41m5PRYJiXB3mDbq/giphy.gif'); */
   background-size: cover;
   background-repeat: norepeat;
   -webkit-background-clip: text;
@@ -542,6 +571,7 @@ h2 {
 @media only screen and (max-width: 770px) {
   .side-menu {
     margin-top: 5.5%;
+    /* margin-left: -120%; */
   }
 }
 
@@ -564,12 +594,16 @@ h2 {
     display: none;
   }
 
-  /* h1 a {
-    margin-left: 190%;
-  } */
+  p { 
+    font-size: 1.5rem;
+  }
+
+  .contact {
+    margin-top: 15%;
+  }
 
   .half-header {
-    width: 45%;
+    width: 100%;
   }
 
   .nav_menu ul li a {
@@ -581,24 +615,17 @@ h2 {
   }
 
   .toggle {
-    /* position: relative; */
     width: 5rem;
     height: 2.5rem;
-    /* background-color: #000000; */
-    /* border-radius: 999px; */
-    /* margin-left: -123%; */
+    /* width: 7rem;
+    height: 3.5rem; */
   }
 
   .egg-label {
     width: 2rem;
     height: 2rem;
-    /* border-radius: 50%; */
-    /* background-color: #ebe6e2; */
-    /* position: absolute; */
-    /* top: 0.25rem;
-    left: 0.25rem;
-    background-image: linear-gradient(135deg, transparent 50%, rgba(0, 0, 0, 0.2) 100%);
-    transition: all 300ms ease-out; */
+    /* width: 3rem;
+    height: 3rem; */
   }
 
   .egg-input:checked+label {
@@ -611,9 +638,10 @@ h2 {
     float: left;
     margin-left: -2%;
     margin-top: 49%;
-    font-size: 0.8rem;
-    width: 125%;
+    font-size: 1rem;
   }
+  
+
 
   .egg-input:checked~.switch_on {
     color: #f3b94f;
