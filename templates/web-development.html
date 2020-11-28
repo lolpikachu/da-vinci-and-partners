@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<!-- <div class="moving_text"> -->
+<div class="fixed_1 container_2">
+    <p>контакт</p>
+    <p>главная</p>
+</div> 
+
+<div class="margin_top">
+    <h2 class="move" id="left">Разработка </h2>
+    <h2 class="move blue" id="right">WEB сайтов</h2>
+</div>
+
+<!-- <div class="yellow"> -->
+    <h2 class="green">Дисклеймер</h2>
+<!-- </div> -->
+
+<p class="p_special blue_font">Не связывайтесь с нами если вы не заинтересованы в высоком качестве</p>
+<h2 class="green">По историческим причинам, безупречный продукт это часть нашего бренда </h2>
+<script type="text/javascript">
+
+$(document).on('scroll', function() {
+    $('.yellow').css("left", Math.max(500 - 0.35 * window.scrollY, 100)
+    + "px");
+})</script>
+<!-- </div> -->
+{% endblock content %}

@@ -19,4 +19,13 @@ def night(request):
 def en(request):
     return render(request, 'index_en.html', {})
 
+def web_development(request):
+    return render(request, 'web-development.html', {})
+
+def pacman(request):
+    return render(request, 'pacman.html', {})
+
+def whitepage(request):
+    return render(request, 'whitepage.html', {})
+
 

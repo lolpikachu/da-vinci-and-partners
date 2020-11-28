@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-from .views import index, about, tunnel, night, en
+from .views import index, about, tunnel, night, en, web_development, pacman, whitepage
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -11,6 +11,9 @@ urlpatterns = [
     path('tunnel/', tunnel),
     path('night/', night),
     path('en/', en),
+    path('web-development/', web_development),
+    path('pacman/', pacman),
+    path('whitepage/', whitepage),
 ]
 
 if settings.DEBUG:
