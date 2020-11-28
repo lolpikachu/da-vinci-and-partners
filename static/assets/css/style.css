@@ -447,18 +447,14 @@ font-size: 5vw;
 }
 
 #myCanvas {
-  height: 69vh;
-  width: 98vw;
-  margin: 0;
+  /* height: 69vh; */
+  /* width: 99vw; */
+  /* margin: 0; */
 }
 
-canvas {
-  height: 50%;
-}
 
-/* .canvas {
-  width: 98vw;
-} */
+
+
 
 .tatu {
   margin-top: 41vh;

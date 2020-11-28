@@ -60,7 +60,7 @@ var radius = 30;          //Circle radius
 var weight = 6;           //Line thickness
 var force = 4000;         //Displacement sphere radius
 var maxDisplacement = 75; //Max displacement, Larger numbers mean shorter teather length
-var circleDensity = 30;   //How many circles per row
+var circleDensity = 28;   //How many circles per row
 
 var backgroundColor = 'black';
 var largeCircleColor = '#222222';
@@ -191,7 +191,7 @@ function init(){
   
   points = [];
   
-  canvas.height = window.innerHeight;
+  canvas.height = window.innerHeight / 1.5 ;
   canvas.width = window.innerWidth;
   
   var morePoints = true;
