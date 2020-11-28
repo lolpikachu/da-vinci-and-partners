@@ -448,7 +448,7 @@ font-size: 5vw;
 
 #myCanvas {
   /* height: 69vh; */
-  /* width: 99vw; */
+  width: 99vw;
   /* margin: 0; */
 }
 
@@ -621,6 +621,14 @@ h2 {
 
 /* MEDIA -------------------------------------------------------------------------------------------------- */
 
+@media only screen and (max-width: 1880px)   {
+  #myCanvas {
+    /* height: 69vh; */
+    width: 100vw;
+    /* margin: 0; */
+  }
+}
+  
 @media only screen and (max-width: 1092px)   {
   
 .boring {
